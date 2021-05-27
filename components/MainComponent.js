@@ -157,7 +157,7 @@ const FavoritesNavigator = createStackNavigator(
                 color: '#fff'
             },
             headerLeft: <Icon
-                name='tree'
+                name='heart'
                 type='font-awesome'
                 iconStyle={styles.stackIcon}
                 onPress={() => navigation.toggleDrawer()}
