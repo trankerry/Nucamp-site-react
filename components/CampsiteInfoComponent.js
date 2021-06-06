@@ -69,13 +69,13 @@ function RenderCampsite(props) {
 
     const shareCampsite = (title, message, url) => {
         Share.share({
-            title,
-            message: `$(title): $(message) $(url)`,
-            url
+            title: title,
+            message: `${title}: ${message} ${url}`,
+            url: url
         },{
-            dialogTitle: 'Share' + title
-        })
-    }
+            dialogTitle: 'Share ' + title
+        });
+    };
 
     if (campsite) {
         return (
